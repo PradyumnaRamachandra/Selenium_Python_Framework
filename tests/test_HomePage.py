@@ -2,6 +2,7 @@ from TestData.HomePageData import HomePageData
 from Utilities.BaseClass import BaseClass
 from pages.HomePage import HomePage
 import pytest
+import time
 
 
 
@@ -31,6 +32,8 @@ class TestHomePage(BaseClass):
         log.info(text)
         assert "Success" in text,"Text is not present"
         self.driver.refresh()
+        time.sleep(1)
+        log.info("Test Completed")
 
 
 

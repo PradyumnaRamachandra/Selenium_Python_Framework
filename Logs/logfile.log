@@ -295,3 +295,30 @@ Success! The Form has been submitted successfully!.
 Success! Thank you! Your order will be delivered in next few weeks :-).
 2020-04-20 19:20:09,520 :INFO :test_e2e :Purchase Completed Successfully
 2020-04-20 19:20:09,958 :INFO :test_e2e :Test Completed
+2020-04-21 16:20:10,227 :INFO :test_formsubmission :Test Started
+2020-04-21 16:20:10,895 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-21 16:20:11,281 :INFO :test_formsubmission :Test Started
+2020-04-21 16:20:11,281 :INFO :test_formsubmission :Test Started
+2020-04-21 16:20:11,940 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-21 16:20:11,940 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-21 16:20:11,990 :INFO :test_formsubmission :Test Started
+2020-04-21 16:20:11,990 :INFO :test_formsubmission :Test Started
+2020-04-21 16:20:11,990 :INFO :test_formsubmission :Test Started
+2020-04-21 16:20:12,932 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-21 16:20:12,932 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-21 16:20:12,932 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-21 16:20:23,676 :INFO :test_e2e :Test Started
+2020-04-21 16:20:25,049 :INFO :test_e2e :iphone X
+2020-04-21 16:20:25,094 :INFO :test_e2e :Samsung Note 8
+2020-04-21 16:20:25,118 :INFO :test_e2e :Nokia Edge
+2020-04-21 16:20:25,141 :INFO :test_e2e :Blackberry
+2020-04-21 16:20:31,304 :INFO :test_e2e :×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2020-04-21 16:20:31,304 :INFO :test_e2e :Purchase Completed Successfully
+2020-04-21 16:20:31,723 :INFO :test_e2e :Test Completed
