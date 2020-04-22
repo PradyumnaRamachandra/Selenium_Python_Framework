@@ -1,5 +1,6 @@
 import inspect
-
+import os
+import time
 import pytest
 import logging
 
@@ -52,3 +53,19 @@ class BaseClass():
     def Select_Value_From_List_Box(self,ele,text):
         select = Select(ele)
         select.select_by_visible_text(text)
+
+
+    def takeScreenshot(self):
+        # Foldername=os.getcwd().split('TestReports')[0]+'TestReports'
+        Foldername="../TestReports"
+        if not os.path.isdir(Foldername+'/ScreenShots'):
+            os.chdir(Foldername)
+            os.mkdir(Foldername+'/ScreenShots/')
+        filename=str(round(time.time()*1000))+".png"
+        try:
+            self.driver.save_screenshot(Foldername+'/ScreenShots/'+filename)
+        except Exception as e:
+            print("Exception is ",e)
+
+    def Click_Element(self,locator):
+        locator.click()

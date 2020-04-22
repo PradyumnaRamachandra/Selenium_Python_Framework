@@ -1,4 +1,4 @@
-
+import datetime
 import pytest
 from selenium import webdriver
 
@@ -57,3 +57,5 @@ def pytest_runtest_makereport(item):
 
 def _capture_screenshot(name):
         driver.get_screenshot_as_file("../TestReports/"+name)
+
+

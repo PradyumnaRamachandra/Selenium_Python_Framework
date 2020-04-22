@@ -1,14 +1,15 @@
-from TestData.HomePageData import HomePageData
+from TestData.ExcelLib import *
 from Utilities.BaseClass import BaseClass
 from pages.HomePage import HomePage
 import pytest
 import time
 
 
+homepage_data=getTestData("HomePage","test_formsubmission")
+
 
 class TestHomePage(BaseClass):
-
-    @pytest.fixture(params=HomePageData.test_HomePage)
+    @pytest.fixture(params=homepage_data)
     def getTestData(self,request):
         return request.param
 
@@ -17,7 +18,6 @@ class TestHomePage(BaseClass):
 
         log=self.getlogger()
         log.info("Test Started")
-        self.driver
 
         #Homepage
         homepage=HomePage(self.driver)
@@ -30,6 +30,7 @@ class TestHomePage(BaseClass):
         self.explicit_wait("xpath","//div[contains(@class,'alert')]")
         text=homepage.Get_Text().text
         log.info(text)
+        self.takeScreenshot()
         assert "Success" in text,"Text is not present"
         self.driver.refresh()
         time.sleep(1)
