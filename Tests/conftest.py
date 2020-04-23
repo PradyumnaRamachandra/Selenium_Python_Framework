@@ -1,4 +1,3 @@
-import datetime
 import pytest
 from selenium import webdriver
 
@@ -11,7 +10,7 @@ driver=None
 #     )
 
 
-@pytest.fixture(scope="class")
+@pytest.fixture()
 def browser_setup(request):
     #browser_name=request.config.getoption("browser_name")
     global driver
