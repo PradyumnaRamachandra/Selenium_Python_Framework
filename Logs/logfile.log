@@ -650,3 +650,143 @@ Success! The Form has been submitted successfully!.
 Success! The Form has been submitted successfully!.
 2020-04-23 15:36:30,213 :INFO :test_formsubmission :Test Completed
 2020-04-23 15:36:30,213 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:40:39,932 :INFO :test_formsubmission :Test Started
+2020-04-24 12:40:40,557 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:40:42,203 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:40:51,169 :INFO :test_formsubmission :Test Started
+2020-04-24 12:40:51,169 :INFO :test_formsubmission :Test Started
+2020-04-24 12:40:51,761 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:40:51,761 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:40:53,463 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:40:53,463 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:46:14,183 :INFO :test_e2e :Test Started
+2020-04-24 12:46:15,139 :INFO :test_e2e :iphone X
+2020-04-24 12:46:15,166 :INFO :test_e2e :Samsung Note 8
+2020-04-24 12:46:15,184 :INFO :test_e2e :Nokia Edge
+2020-04-24 12:46:15,201 :INFO :test_e2e :Blackberry
+2020-04-24 12:46:20,959 :INFO :test_e2e :×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2020-04-24 12:46:20,960 :INFO :test_e2e :Purchase Completed Successfully
+2020-04-24 12:46:21,379 :INFO :test_e2e :Test Completed
+2020-04-24 12:52:00,618 :INFO :test_formsubmission :Test Started
+2020-04-24 12:52:01,145 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:52:02,828 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:52:12,013 :INFO :test_formsubmission :Test Started
+2020-04-24 12:52:12,013 :INFO :test_formsubmission :Test Started
+2020-04-24 12:52:12,581 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:52:12,581 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:52:14,283 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:52:14,283 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:52:23,150 :INFO :test_e2e :Test Started
+2020-04-24 12:52:24,182 :INFO :test_e2e :iphone X
+2020-04-24 12:52:24,206 :INFO :test_e2e :Samsung Note 8
+2020-04-24 12:52:24,226 :INFO :test_e2e :Nokia Edge
+2020-04-24 12:52:24,246 :INFO :test_e2e :Blackberry
+2020-04-24 12:52:30,129 :INFO :test_e2e :×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2020-04-24 12:52:30,129 :INFO :test_e2e :Purchase Completed Successfully
+2020-04-24 12:52:30,529 :INFO :test_e2e :Test Completed
+2020-04-24 12:52:39,690 :INFO :test_formsubmission :Test Started
+2020-04-24 12:52:39,690 :INFO :test_formsubmission :Test Started
+2020-04-24 12:52:39,690 :INFO :test_formsubmission :Test Started
+2020-04-24 12:52:40,317 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:52:40,317 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:52:40,317 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:52:41,971 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:52:41,971 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:52:41,971 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:52:50,910 :INFO :test_formsubmission :Test Started
+2020-04-24 12:52:50,910 :INFO :test_formsubmission :Test Started
+2020-04-24 12:52:50,910 :INFO :test_formsubmission :Test Started
+2020-04-24 12:52:50,910 :INFO :test_formsubmission :Test Started
+2020-04-24 12:52:51,534 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:52:51,534 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:52:51,534 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:52:51,534 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:52:53,298 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:52:53,298 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:52:53,298 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:52:53,298 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:56:18,551 :INFO :test_formsubmission :Test Started
+2020-04-24 12:56:19,115 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:56:20,774 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:56:30,207 :INFO :test_formsubmission :Test Started
+2020-04-24 12:56:30,207 :INFO :test_formsubmission :Test Started
+2020-04-24 12:56:30,917 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:56:30,917 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:56:32,647 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:56:32,647 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:56:43,452 :INFO :test_e2e :Test Started
+2020-04-24 12:56:44,541 :INFO :test_e2e :iphone X
+2020-04-24 12:56:44,568 :INFO :test_e2e :Samsung Note 8
+2020-04-24 12:56:44,589 :INFO :test_e2e :Nokia Edge
+2020-04-24 12:56:44,613 :INFO :test_e2e :Blackberry
+2020-04-24 12:56:50,467 :INFO :test_e2e :×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2020-04-24 12:56:50,468 :INFO :test_e2e :Purchase Completed Successfully
+2020-04-24 12:56:50,880 :INFO :test_e2e :Test Completed
+2020-04-24 12:56:59,107 :INFO :test_formsubmission :Test Started
+2020-04-24 12:56:59,107 :INFO :test_formsubmission :Test Started
+2020-04-24 12:56:59,107 :INFO :test_formsubmission :Test Started
+2020-04-24 12:56:59,917 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:56:59,917 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:56:59,917 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:57:01,606 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:57:01,606 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:57:01,606 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:57:13,456 :INFO :test_formsubmission :Test Started
+2020-04-24 12:57:13,456 :INFO :test_formsubmission :Test Started
+2020-04-24 12:57:13,456 :INFO :test_formsubmission :Test Started
+2020-04-24 12:57:13,456 :INFO :test_formsubmission :Test Started
+2020-04-24 12:57:14,257 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:57:14,257 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:57:14,257 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:57:14,257 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:57:16,032 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:57:16,032 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:57:16,032 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:57:16,032 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:59:45,390 :INFO :test_formsubmission :Test Started
+2020-04-24 12:59:45,997 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:59:47,734 :INFO :test_formsubmission :Test Completed
+2020-04-24 12:59:57,902 :INFO :test_formsubmission :Test Started
+2020-04-24 12:59:57,902 :INFO :test_formsubmission :Test Started
+2020-04-24 12:59:58,531 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 12:59:58,531 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-04-24 13:00:00,372 :INFO :test_formsubmission :Test Completed
+2020-04-24 13:00:00,372 :INFO :test_formsubmission :Test Completed
+2020-04-24 13:09:57,988 :INFO :test_e2e :Test Started
+2020-04-24 13:09:58,935 :INFO :test_e2e :iphone X
+2020-04-24 13:09:58,969 :INFO :test_e2e :Samsung Note 8
+2020-04-24 13:09:59,044 :INFO :test_e2e :Nokia Edge
+2020-04-24 13:09:59,066 :INFO :test_e2e :Blackberry
+2020-04-24 13:10:05,094 :INFO :test_e2e :×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2020-04-24 13:10:05,094 :INFO :test_e2e :Purchase Completed Successfully
+2020-04-24 13:10:05,489 :INFO :test_e2e :Test Completed

@@ -54,7 +54,8 @@ class TestProductCart(BaseClass):
         self.explicit_wait("Id","country")
 
        # confirmpage=ConfirmPage(self.driver)
-        confirmpage.enterDeliveryLocation().send_keys(gettestdata["DeliveryLocation"])
+       # confirmpage.enterDeliveryLocation().send_keys(gettestdata["DeliveryLocation"])
+        self.Enter_Value_In_Edit_Field(confirmpage.enterDeliveryLocation(),gettestdata["DeliveryLocation"])
 
         self.explicit_wait("xpath","//a[text()='India']")
 
