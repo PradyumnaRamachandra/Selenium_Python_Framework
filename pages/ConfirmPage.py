@@ -14,8 +14,8 @@ class ConfirmPage():
     confirm_msg=(By.CSS_SELECTOR,"div[class*='alert-dismissible']")
 
     def enterDeliveryLocation(self):
-        self.driver.find_element(*ConfirmPage.delivery_location).send_keys("Ind")
-        #return self.driver.find_element(*ConfirmPage.delivery_location)
+        # self.driver.find_element(*ConfirmPage.delivery_location).send_keys("Ind")
+        return self.driver.find_element(*ConfirmPage.delivery_location)
 
     def enterCountry(self):
         #return self.driver.find_element(*ConfirmPage.country)

@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 
+from Utilities.BaseClass import BaseClass
 from pages.CheckoutPage import CheckoutPage
 
 

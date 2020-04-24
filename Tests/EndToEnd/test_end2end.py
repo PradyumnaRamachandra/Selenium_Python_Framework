@@ -9,10 +9,18 @@ from Utilities.BaseClass import BaseClass
 from pages.CheckoutPage import CheckoutPage
 from pages.ConfirmPage import ConfirmPage
 from pages.HomePage import HomePage
+from TestData.ExcelLib import *
+
+
+ConfirmPageData=getTestData("EndToEnd","test_e2e")
 
 class TestProductCart(BaseClass):
 
-    def test_e2e(self):
+    @pytest.fixture(params=ConfirmPageData)
+    def gettestdata(self,request):
+        return request.param
+
+    def test_e2e(self,gettestdata):
 
         #Logger Object
         log=self.getlogger()
@@ -46,7 +54,7 @@ class TestProductCart(BaseClass):
         self.explicit_wait("Id","country")
 
        # confirmpage=ConfirmPage(self.driver)
-        confirmpage.enterDeliveryLocation()
+        confirmpage.enterDeliveryLocation().send_keys(gettestdata["DeliveryLocation"])
 
         self.explicit_wait("xpath","//a[text()='India']")
 
