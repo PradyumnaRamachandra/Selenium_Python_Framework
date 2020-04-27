@@ -30,8 +30,9 @@ class TestHomePage(BaseClass):
         self.explicit_wait("xpath","//div[contains(@class,'alert')]")
         text=homepage.Get_Text().text
         log.info(text)
+
         self.takeScreenshot()
-        assert "Success" in text,"Text is not present"
+        assert "Successsss" in text,"Text is not present"
         self.driver.refresh()
         time.sleep(1)
         log.info("Test Completed")

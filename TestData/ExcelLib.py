@@ -1,9 +1,9 @@
-
+from Utilities.Config import Config
 import openpyxl
 
 def getTestData(sheetname,testcase_name):
 
-    workbook = openpyxl.load_workbook("../TestData/TestData.xlsx")
+    workbook = openpyxl.load_workbook(Config["Test_Data_Path"])
     worksheet = workbook[sheetname]
     data = []
     header = [testcase_name]

@@ -10,7 +10,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
-
+from Utilities.Config import Config
 
 @pytest.mark.usefixtures("browser_setup")
 class BaseClass():
@@ -41,7 +41,7 @@ class BaseClass():
     def getlogger(self):
         loggername=inspect.stack()[1][3]
         logger=logging.getLogger(loggername)
-        filehandler=logging.FileHandler("../Logs/logfile.log")
+        filehandler=logging.FileHandler(Config["Log_File_Path"])
         formatter=logging.Formatter("%(asctime)s :%(levelname)s :%(name)s :%(message)s")
         filehandler.setFormatter(formatter)
         logger.addHandler(filehandler)
@@ -55,13 +55,13 @@ class BaseClass():
 
     def takeScreenshot(self):
         # Foldername=os.getcwd().split('TestReports')[0]+'TestReports'
-        Foldername="../TestReports"
-        if not os.path.isdir(Foldername+'/ScreenShots'):
-            os.chdir(Foldername)
-            os.mkdir(Foldername+'/ScreenShots/')
+        Foldername=Config["Screen_Shots_Path"]
+        # if not os.path.isdir(Foldername+'SnapShots'):
+        #     os.chdir(Foldername)
+        #     os.mkdir(Foldername+'SnapShots/')
         filename=str(round(time.time()*1000))+".png"
         try:
-            self.driver.save_screenshot(Foldername+'/ScreenShots/'+filename)
+            self.driver.save_screenshot(Foldername+'/'+filename)
         except Exception as e:
             print("Exception is ",e)
 

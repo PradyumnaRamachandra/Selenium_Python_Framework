@@ -2,6 +2,8 @@ import pytest
 from selenium import webdriver
 
 from Utilities.Config import Config
+
+
 driver=None
 
 # def pytest_addoption(parser):
@@ -46,6 +48,7 @@ def pytest_runtest_makereport(item):
         xfail = hasattr(report, 'wasxfail')
         if (report.skipped and xfail) or (report.failed and not xfail):
             file_name = report.nodeid.replace("::", "_") + ".png"
+
             _capture_screenshot(file_name)
             if file_name:
                 html = '<div><img src="%s" alt="screenshot" style="width:304px;height:228px;" ' \
@@ -55,6 +58,6 @@ def pytest_runtest_makereport(item):
 
 
 def _capture_screenshot(name):
-        driver.get_screenshot_as_file("../TestReports/"+name)
+    driver.get_screenshot_as_file(name)
 
 
