@@ -17,23 +17,26 @@ class BaseClass():
 
     # To return the Type of Locator
     def getbyType(self,locatortype):
+
+        locatortype,locatorvalue=locatortype
         locatortype=locatortype.lower()
+
         if locatortype=="id":
-            return By.ID
+            return By.ID, locatorvalue
         elif locatortype=="xpath":
-            return By.XPATH
+            return By.XPATH, locatorvalue
         elif locatortype=="class":
-            return By.CLASS_NAME
+            return By.CLASS_NAME, locatorvalue
         elif locatortype=="css":
-            return By.CSS_SELECTOR
+            return By.CSS_SELECTOR, locatorvalue
         elif locatortype=="linktext":
-            return By.LINK_TEXT
+            return By.LINK_TEXT, locatorvalue
         elif locatortype=="name":
-            return By.NAME
+            return By.NAME, locatorvalue
         elif locatortype=="partiallinktext":
-            return By.PARTIAL_LINK_TEXT
+            return By.PARTIAL_LINK_TEXT,locatorvalue
         elif locatortype=="tagname":
-            return By.TAG_NAME
+            return By.TAG_NAME, locatorvalue
         else:
             print("Locator type is not supported")
 
@@ -48,8 +51,8 @@ class BaseClass():
         logger.setLevel(logging.INFO)
         return logger
 
-    def explicit_wait(self,locatortype,locatorvalue):
-        bytype=self.getbyType(locatortype)
+    def explicit_wait(self,locatortype):
+        bytype,locatorvalue=self.getbyType(locatortype)
         wait = WebDriverWait(self.driver, 25)
         wait.until(expected_conditions.presence_of_element_located((bytype, locatorvalue)))
 

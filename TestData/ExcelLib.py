@@ -25,3 +25,16 @@ def getTestData(sheetname,testcase_name):
             data.append(temp)
 
     return data
+
+def read_locators(sheetname):
+    workbook = openpyxl.load_workbook(Config['Locator_File_Path'])
+    worksheet = workbook[sheetname]
+    locatordict = {}
+    rows = worksheet.max_row
+    cols = worksheet.max_column
+    for row in range(2, rows + 1):
+        for col in range(1, cols + 1):
+            # print(worksheet.cell(row=row,column=col).value)
+            locatordict.update({worksheet.cell(row=row, column=1).value: (worksheet.cell(row=row, column=2).value, worksheet.cell(row=row, column=3).value)})
+
+    return locatordict
