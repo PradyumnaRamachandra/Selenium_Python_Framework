@@ -51,10 +51,11 @@ class BaseClass():
         logger.setLevel(logging.INFO)
         return logger
 
-    def explicit_wait(self,locatortype):
-        bytype,locatorvalue=self.getbyType(locatortype)
+    def explicit_wait(self,locatortype,locatorvalue):
+        Web_Element=(locatortype,locatorvalue)
+        locatortype, locatorvalue=self.getbyType(Web_Element)
         wait = WebDriverWait(self.driver, 25)
-        wait.until(expected_conditions.presence_of_element_located((bytype, locatorvalue)))
+        wait.until(expected_conditions.presence_of_element_located((locatortype,locatorvalue)))
 
     def takeScreenshot(self):
         # Foldername=os.getcwd().split('TestReports')[0]+'TestReports'
