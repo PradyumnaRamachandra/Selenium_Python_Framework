@@ -1,34 +1,32 @@
 from selenium.webdriver.common.by import By
 
+from Utilities.BaseClass import BaseClass
 
-class ConfirmPage():
+from TestData.ExcelLib import *
+
+class ConfirmPage(BaseClass):
+
+    ConfirmPageObjects=read_locators("ConfirmPage")
 
     def __init__(self,driver):
         self.driver=driver
 
-
-    delivery_location=(By.ID,"country")
-    country=(By.XPATH,"//a[text()='India']")
-    checkbox=(By.XPATH,"//div[@class='checkbox checkbox-primary']")
-    purchase=(By.XPATH,"//input[@type='submit']")
-    confirm_msg=(By.CSS_SELECTOR,"div[class*='alert-dismissible']")
-
     def enterDeliveryLocation(self):
-        # self.driver.find_element(*ConfirmPage.delivery_location).send_keys("Ind")
-        return self.driver.find_element(*ConfirmPage.delivery_location)
+        delivery_location=self.getbyType(ConfirmPage.ConfirmPageObjects['delivery_location'])
+        return self.driver.find_element(*delivery_location)
 
     def enterCountry(self):
-        #return self.driver.find_element(*ConfirmPage.country)
-        self.driver.find_element(*ConfirmPage.country).click()
+        country=self.getbyType(ConfirmPage.ConfirmPageObjects['country'])
+        self.driver.find_element(*country).click()
 
     def clickcheckbox(self):
-        #return self.driver.find_element(*ConfirmPage.checkbox)
-        self.driver.find_element(*ConfirmPage.checkbox).click()
+        checkbox=self.getbyType(ConfirmPage.ConfirmPageObjects['checkbox'])
+        self.driver.find_element(*checkbox).click()
 
     def clickpurchase(self):
-        #return self.driver.find_element(*ConfirmPage.purchase)
-        self.driver.find_element(*ConfirmPage.purchase).click()
+        purchase=self.getbyType(ConfirmPage.ConfirmPageObjects['purchase'])
+        self.driver.find_element(*purchase).click()
 
     def getConfirmText(self):
-        return self.driver.find_element(*ConfirmPage.confirm_msg)
-        #self.driver.find_element(*ConfirmPage.confirm_msg)
+        confirm_msg=self.getbyType(ConfirmPage.ConfirmPageObjects['confirm_msg'])
+        return self.driver.find_element(*confirm_msg)

@@ -24,3 +24,12 @@ Success! The Form has been submitted successfully!.
 Success! Thank you! Your order will be delivered in next few weeks :-).
 2020-04-27 21:18:57,929 :INFO :test_e2e :Purchase Completed Successfully
 2020-04-27 21:18:58,360 :INFO :test_e2e :Test Completed
+2020-04-28 12:57:10,384 :INFO :test_e2e :Test Started
+2020-04-28 12:57:11,380 :INFO :test_e2e :iphone X
+2020-04-28 12:57:11,415 :INFO :test_e2e :Samsung Note 8
+2020-04-28 12:57:11,434 :INFO :test_e2e :Nokia Edge
+2020-04-28 12:57:11,452 :INFO :test_e2e :Blackberry
+2020-04-28 12:57:17,231 :INFO :test_e2e :×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2020-04-28 12:57:17,231 :INFO :test_e2e :Purchase Completed Successfully
+2020-04-28 12:57:17,673 :INFO :test_e2e :Test Completed
