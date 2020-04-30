@@ -41,7 +41,7 @@ class HomePage(BaseClass):
         return ele
 
     def Click_Submit(self):
-        submit=self.getbyType(HomePage.HomePageObjects['submit'])
+        submit=self.getbyType(HomePage.HomePageObjects['Submit'])
         return self.driver.find_element(*submit)
 
     def Get_Text(self):
