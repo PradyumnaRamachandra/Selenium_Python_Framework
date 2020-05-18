@@ -16,12 +16,18 @@ driver=None
 def browser_setup(request):
     #browser_name=request.config.getoption("browser_name")
     global driver
-    if Config['Browser_Name'].upper() == "CHROME":
+
+    if Config['Browser_Name'].upper() == "CHROME" and Config['Headless'].upper()=='YES':
+        options = webdriver.ChromeOptions()
+        options.add_argument("headless")
+        driver = webdriver.Chrome(Config['Chrome_Driver_Path'], options=options)
+    elif Config['Browser_Name'].upper() == "CHROME" :
         driver = webdriver.Chrome(Config['Chrome_Driver_Path'])
     elif Config['Browser_Name'].upper() == "FIREFOX":
+        # driver = webdriver.Firefox(Config['Gecko_Driver_Path'])
         driver = webdriver.Firefox(executable_path=r"C:\PythonProjects\Selenium_Python_Framework\Drivers\geckodriver.exe")
     else:
-        driver = webdriver.Ie([Config['IE_Driver_Path']])
+        driver = webdriver.Ie(Config['IE_Driver_Path'])
 
     driver.maximize_window()
     driver.implicitly_wait(Config['Wait_Time'])
