@@ -16,3 +16,4 @@ Config={
     "App_URL":"https://rahulshettyacademy.com/angularpractice/",
     "Wait_Time":40
 }
+
