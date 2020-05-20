@@ -2,7 +2,7 @@
 
 Config={
     "Browser_Name":'chrome',
-    "Headless":'',
+    "Headless":'YES',
     "Chrome_Driver_Path":r'C:\PythonProjects\Selenium_Python_Framework\Drivers\chromedriver.exe',
     "Gecko_Driver_Path":r"C:\PythonProjects\Selenium_Python_Framework\Drivers\geckodriver.exe",
     "Test_Data_Path":r"C:\PythonProjects\Selenium_Python_Framework\TestData\TestData.xlsx",

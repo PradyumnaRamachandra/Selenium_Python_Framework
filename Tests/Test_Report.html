@@ -243,7 +243,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>Test_Report.html</h1>
-    <p>Report generated on 18-May-2020 at 11:32:50 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
+    <p>Report generated on 20-May-2020 at 10:07:56 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -262,7 +262,7 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.7.0</td></tr></table>
     <h2>Summary</h2>
-    <p>3 tests ran in 40.11 seconds. </p>
+    <p>3 tests ran in 40.84 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -278,19 +278,19 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">HomePage/test_HomePage.py::TestHomePage::test_formsubmission[getTestData0]</td>
-          <td class="col-duration">1.06</td>
+          <td class="col-duration">1.12</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div><div><img src="HomePage/test_HomePage.py_TestHomePage_test_formsubmission[getTestData0].png" alt="screenshot" style="width:304px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div class="log">self = &lt;test_HomePage.TestHomePage object at 0x07492630&gt;<br/>getTestData = {&#x27;Email&#x27;: &#x27;sandy@email.com&#x27;, &#x27;First_Name&#x27;: &#x27;Sandy&#x27;, &#x27;Gender&#x27;: &#x27;Female&#x27;}<br/><br/>    def test_formsubmission(self,getTestData):<br/>    <br/>        log=self.getlogger()<br/>        log.info(&quot;Test Started&quot;)<br/>    <br/>        #Homepage<br/>        homepage=HomePage(self.driver)<br/>        homepage.entername().send_keys(getTestData[&quot;First_Name&quot;])<br/>        homepage.enteremail().send_keys(getTestData[&quot;Email&quot;])<br/>        homepage.SelectGender()<br/>        self.Select_Value_From_List_Box(homepage.SelectGender(), getTestData[&quot;Gender&quot;])<br/>        homepage.Click_Submit().click()<br/>    <br/>        self.explicit_wait(&quot;xpath&quot;,&quot;//div[contains(@class,&#x27;alert&#x27;)]&quot;)<br/>        text=homepage.Get_Text().text<br/>        log.info(text)<br/>    <br/>        self.takeScreenshot()<br/>&gt;       assert &quot;Successsss&quot; in text,&quot;Text is not present&quot;<br/><span class="error">E       AssertionError: Text is not present</span><br/><span class="error">E       assert &#x27;Successsss&#x27; in &#x27;×\nSuccess! The Form has been submitted successfully!.&#x27;</span><br/><br/>HomePage\test_HomePage.py:35: AssertionError<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m test_formsubmission:test_HomePage.py:20 Test Started
+            <div class="log">self = &lt;test_HomePage.TestHomePage object at 0x078554D0&gt;<br/>getTestData = {&#x27;Email&#x27;: &#x27;sandy@email.com&#x27;, &#x27;First_Name&#x27;: &#x27;Sandy&#x27;, &#x27;Gender&#x27;: &#x27;Female&#x27;}<br/><br/>    def test_formsubmission(self,getTestData):<br/>    <br/>        log=self.getlogger()<br/>        log.info(&quot;Test Started&quot;)<br/>    <br/>        #Homepage<br/>        homepage=HomePage(self.driver)<br/>        homepage.entername().send_keys(getTestData[&quot;First_Name&quot;])<br/>        homepage.enteremail().send_keys(getTestData[&quot;Email&quot;])<br/>        homepage.SelectGender()<br/>        self.Select_Value_From_List_Box(homepage.SelectGender(), getTestData[&quot;Gender&quot;])<br/>        homepage.Click_Submit().click()<br/>    <br/>        self.explicit_wait(&quot;xpath&quot;,&quot;//div[contains(@class,&#x27;alert&#x27;)]&quot;)<br/>        text=homepage.Get_Text().text<br/>        log.info(text)<br/>    <br/>        self.takeScreenshot()<br/>&gt;       assert &quot;Success123&quot; in text,&quot;Text is not present&quot;<br/><span class="error">E       AssertionError: Text is not present</span><br/><span class="error">E       assert &#x27;Success123&#x27; in &#x27;×\nSuccess! The Form has been submitted successfully!.&#x27;</span><br/><br/>HomePage\test_HomePage.py:35: AssertionError<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m test_formsubmission:test_HomePage.py:20 Test Started
 [32mINFO    [0m test_formsubmission:test_HomePage.py:32 ×
 Success! The Form has been submitted successfully!.<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">EndToEnd/test_end2end.py::TestProductCart::test_e2e[gettestdata0]</td>
-          <td class="col-duration">7.42</td>
+          <td class="col-duration">7.79</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -307,7 +307,7 @@ Success! Thank you! Your order will be delivered in next few weeks :-).
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">HomePage/test_FormSubmission.py::TestFormSubmission::test_formstests[gettestdata0]</td>
-          <td class="col-duration">1.88</td>
+          <td class="col-duration">2.14</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
