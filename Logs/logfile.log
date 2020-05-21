@@ -107,3 +107,78 @@ Success! Thank you! Your order will be delivered in next few weeks :-).
 2020-05-20 10:07:54,927 :INFO :test_formsubmission :Test Started
 2020-05-20 10:07:55,583 :INFO :test_formsubmission :×
 Success! The Form has been submitted successfully!.
+2020-05-20 10:17:24,220 :INFO :test_e2e :Test Started
+2020-05-20 10:17:25,168 :INFO :test_e2e :iphone X
+2020-05-20 10:17:25,203 :INFO :test_e2e :Samsung Note 8
+2020-05-20 10:17:25,226 :INFO :test_e2e :Nokia Edge
+2020-05-20 10:17:25,248 :INFO :test_e2e :Blackberry
+2020-05-20 10:17:45,513 :INFO :test_formsubmission :Test Started
+2020-05-20 10:17:46,072 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-05-20 10:17:47,534 :INFO :test_formsubmission :Test Completed
+2020-05-20 10:26:36,988 :INFO :test_e2e :Test Started
+2020-05-20 10:26:37,892 :INFO :test_e2e :iphone X
+2020-05-20 10:26:37,917 :INFO :test_e2e :Samsung Note 8
+2020-05-20 10:26:37,935 :INFO :test_e2e :Nokia Edge
+2020-05-20 10:26:37,953 :INFO :test_e2e :Blackberry
+2020-05-20 10:26:58,085 :INFO :test_formsubmission :Test Started
+2020-05-20 10:26:58,613 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-05-20 10:27:00,058 :INFO :test_formsubmission :Test Completed
+2020-05-20 10:49:17,002 :INFO :test_e2e :Test Started
+2020-05-20 10:49:17,973 :INFO :test_e2e :iphone X
+2020-05-20 10:49:17,997 :INFO :test_e2e :Samsung Note 8
+2020-05-20 10:49:18,017 :INFO :test_e2e :Nokia Edge
+2020-05-20 10:49:18,036 :INFO :test_e2e :Blackberry
+2020-05-20 10:49:23,819 :INFO :test_e2e :×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2020-05-20 10:49:23,820 :INFO :test_e2e :Purchase Completed Successfully
+2020-05-20 10:49:24,230 :INFO :test_e2e :Test Completed
+2020-05-20 10:49:45,149 :INFO :test_formsubmission :Test Started
+2020-05-20 10:49:45,806 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-05-20 10:51:20,167 :INFO :test_e2e :Test Started
+2020-05-20 10:51:21,226 :INFO :test_e2e :iphone X
+2020-05-20 10:51:21,251 :INFO :test_e2e :Samsung Note 8
+2020-05-20 10:51:21,269 :INFO :test_e2e :Nokia Edge
+2020-05-20 10:51:21,287 :INFO :test_e2e :Blackberry
+2020-05-20 10:51:27,150 :INFO :test_e2e :×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2020-05-20 10:51:27,151 :INFO :test_e2e :Purchase Completed Successfully
+2020-05-20 10:51:27,546 :INFO :test_e2e :Test Completed
+2020-05-20 10:51:47,611 :INFO :test_formsubmission :Test Started
+2020-05-20 10:51:48,206 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-05-20 10:52:29,236 :INFO :test_e2e :Test Started
+2020-05-20 10:52:30,072 :INFO :test_e2e :iphone X
+2020-05-20 10:52:30,097 :INFO :test_e2e :Samsung Note 8
+2020-05-20 10:52:30,114 :INFO :test_e2e :Nokia Edge
+2020-05-20 10:52:30,136 :INFO :test_e2e :Blackberry
+2020-05-20 10:52:51,424 :INFO :test_formsubmission :Test Started
+2020-05-20 10:52:51,928 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-05-20 10:54:53,553 :INFO :test_e2e :Test Started
+2020-05-20 10:54:54,406 :INFO :test_e2e :iphone X
+2020-05-20 10:54:54,427 :INFO :test_e2e :Samsung Note 8
+2020-05-20 10:54:54,444 :INFO :test_e2e :Nokia Edge
+2020-05-20 10:54:54,460 :INFO :test_e2e :Blackberry
+2020-05-20 10:57:36,337 :INFO :test_e2e :Test Started
+2020-05-20 10:57:37,311 :INFO :test_e2e :iphone X
+2020-05-20 10:57:37,335 :INFO :test_e2e :Samsung Note 8
+2020-05-20 10:57:37,353 :INFO :test_e2e :Nokia Edge
+2020-05-20 10:57:37,374 :INFO :test_e2e :Blackberry
+2020-05-20 10:57:43,150 :INFO :test_e2e :×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2020-05-20 10:57:43,150 :INFO :test_e2e :Purchase Completed Successfully
+2020-05-20 10:57:43,597 :INFO :test_e2e :Test Completed
+2020-05-20 10:58:03,468 :INFO :test_formsubmission :Test Started
+2020-05-20 10:58:04,281 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.
+2020-05-20 11:07:19,511 :INFO :test_e2e :Test Started
+2020-05-20 11:07:20,490 :INFO :test_e2e :iphone X
+2020-05-20 11:07:20,518 :INFO :test_e2e :Samsung Note 8
+2020-05-20 11:07:20,540 :INFO :test_e2e :Nokia Edge
+2020-05-20 11:07:20,559 :INFO :test_e2e :Blackberry
+2020-05-20 11:07:41,613 :INFO :test_formsubmission :Test Started
+2020-05-20 11:07:42,141 :INFO :test_formsubmission :×
+Success! The Form has been submitted successfully!.

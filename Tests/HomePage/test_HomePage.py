@@ -32,7 +32,7 @@ class TestHomePage(BaseClass):
         log.info(text)
 
         self.takeScreenshot()
-        assert "Success" in text,"Text is not present"
+        assert "Success123" in text,"Text is not present"
         self.driver.refresh()
         time.sleep(1)
         log.info("Test Completed")
