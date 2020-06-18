@@ -2,7 +2,7 @@ import openpyxl
 
 
 #
-# workbook=openpyxl.load_workbook("../TestData/TestData.xlsx")
+# workbook=openpyxl.load_workbook("../TestData/TestData1.xlsx")
 # worksheet=workbook["HomePage"]
 # data=[]
 # header=["TC"]
@@ -49,7 +49,7 @@ import openpyxl
 
 def read_locators():
 
-    workbook = openpyxl.load_workbook("C:\\Users\\pr57\\Desktop\\Selenium_Python\\TestObjects.xlsx")
+    workbook = openpyxl.load_workbook("C:\\Users\\pr57\\Desktop\\Selenium_Python\\TestObjects1.xlsx")
     worksheet = workbook["HomePage"]
     locatordict = {}
     rows = worksheet.max_row

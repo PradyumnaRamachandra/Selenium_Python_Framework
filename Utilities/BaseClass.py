@@ -66,6 +66,7 @@ class BaseClass():
         filename=str(round(time.time()*1000))+".png"
         try:
             self.driver.save_screenshot(Foldername+'/'+filename)
+
         except Exception as e:
             print("Exception is ",e)
 
