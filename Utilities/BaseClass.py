@@ -74,7 +74,10 @@ class BaseClass():
 
     def Select_Value_From_List_Box(self,ele,text):
         select = Select(ele)
-        select.select_by_visible_text(text)
+        if isinstance(text,str):
+            select.select_by_visible_text(text)
+        else:
+            select.select_by_index(text)
 
     def Click_Element(self,locator):
         locator.click()
