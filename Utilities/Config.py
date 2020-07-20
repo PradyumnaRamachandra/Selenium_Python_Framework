@@ -13,7 +13,7 @@ Config={
     "IE_Driver_Path":"C:\PythonProjects\Selenium_Python_Framework\Drivers\IEDriverServer.exe",
     "USERNAME":"",
     "PASSWORD":"",
-    "App_URL":"http://newtours.demoaut.com/",
+    "App_URL":"http://demo.guru99.com/test/newtours/index.php",
     "Wait_Time":30
 }
 

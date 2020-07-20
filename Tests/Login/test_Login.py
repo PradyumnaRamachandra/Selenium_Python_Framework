@@ -1,6 +1,7 @@
 
 from TestData.ExcelLib import *
 from Utilities.BaseClass import BaseClass
+
 from pages.LoginPage import LoginPage
 import pytest
 import time
@@ -24,8 +25,9 @@ class TestLogin(BaseClass):
         self.Enter_Value_In_Edit_Field(loginpage.getpassword(),LoginTestData['Password'])
         self.takeScreenshot()
         self.Click_Element(loginpage.getsignin())
-        self.explicit_wait("xpath","//input[@value='roundtrip']")
+        # self.explicit_wait("xpath","//input[@value='roundtrip']")
+        self.explicit_wait("xpath","//a[text()='SIGN-OFF']")
         self.Click_Element(loginpage.getSignOff())
-        self.explicit_wait("name","login")
+        self.explicit_wait("name","submit")
         log.info("Login Test Completed")
 
