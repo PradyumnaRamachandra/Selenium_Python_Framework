@@ -1,25 +1,24 @@
 
 from TestData.ExcelLib import *
+from Utilities.UtilityFunctions import UtilityFunctions
 
-class BookFlightPage():
+
+class BookFlightPage(UtilityFunctions):
 
     BookFlightPageObjects=read_locators("BookFlightPage")
 
-    def __init__(self,driver):
-        self.driver=driver
-
-    def getFirstname(self):
+    def enter_firstname(self,value):
         txt_firstname=BookFlightPage.BookFlightPageObjects['txt_firstname']
-        return self.driver.find_element(*txt_firstname)
+        self.Enter_Value_In_Edit_Field(txt_firstname,value)
 
-    def getLastname(self):
+    def enter_lastname(self,value):
         txt_lastname=BookFlightPage.BookFlightPageObjects['txt_lastname']
-        return self.driver.find_element(*txt_lastname)
+        self.Enter_Value_In_Edit_Field(txt_lastname,value)
 
-    def getCreditCard(self):
+    def enter_creditCard(self,value):
         txt_creditcard=BookFlightPage.BookFlightPageObjects['txt_creditcard']
-        return self.driver.find_element(*txt_creditcard)
+        self.Enter_Value_In_Edit_Field(txt_creditcard,value)
 
-    def getPurchase(self):
+    def click_purchase(self):
         btn_purchase=BookFlightPage.BookFlightPageObjects['btn_purchase']
-        return self.driver.find_element(*btn_purchase)
+        self.Click_Element(btn_purchase)

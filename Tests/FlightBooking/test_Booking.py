@@ -7,7 +7,7 @@ from pages.ConfirmationPage import ConfirmationPage
 from pages.FindFlightsPage import FindFlightsPage
 from pages.LoginPage import LoginPage
 import pytest
-import time
+
 from pages.SelectFlightsPage import SelectFlightsPage
 
 BookingData=getTestData("BookingModule","test_flightbooking")
@@ -23,46 +23,40 @@ class TestBooking(BaseClass):
         log=self.getlogger()
         log.info("Booking  Test Started")
 
-        #LoginPage
-        loginpage=LoginPage(self.driver)
-        self.Enter_Value_In_Edit_Field(loginpage.getusername(),BookingTestData['UserName'])
-        self.Enter_Value_In_Edit_Field(loginpage.getpassword(),BookingTestData['Password'])
-        self.takeScreenshot()
-        self.Click_Element(loginpage.getsignin())
-        self.explicit_wait("xpath","//input[@value='roundtrip']")
+        # LoginPage
+        loginpage = LoginPage(self.driver)
+        loginpage.Enter_Username(BookingTestData['UserName'])
+        loginpage.Enter_Password(BookingTestData['Password'])
+        loginpage.Click_Signin()
 
         #FindFlightsPage
         findflightspage=FindFlightsPage(self.driver)
-        self.Click_Element(findflightspage.getoneway())
-        self.Select_Value_From_List_Box(findflightspage.getPassengers(),BookingTestData['No_of_Passengers'])
-        self.Select_Value_From_List_Box(findflightspage.getDeparting(),BookingTestData['Departing_From'])
-        self.Select_Value_From_List_Box(findflightspage.getDepartingDate(),BookingTestData['Departing_Day'])
-        self.takeScreenshot()
-        self.Click_Element(findflightspage.getContinue())
-        self.explicit_wait("xpath","(//font[contains(text(),'DEPART')])[1]")
+        findflightspage.select_trip_type()
+        findflightspage.select_passengers(BookingTestData['No_of_Passengers'])
+        findflightspage.select_departing_from(BookingTestData['Departing_From'])
+        findflightspage.select_departing_date(BookingTestData['Departing_Day'])
+        findflightspage.click_continue()
 
         #SelectFlightsPage
         selectflightspage=SelectFlightsPage(self.driver)
-        self.takeScreenshot()
-        self.Click_Element(selectflightspage.getflights_reservation())
-        self.explicit_wait("name","passFirst0")
+        selectflightspage.click_flights_reservation()
 
         #BookFlightPage
         bookflightpage=BookFlightPage(self.driver)
-        self.Enter_Value_In_Edit_Field(bookflightpage.getFirstname(),BookingTestData['Passenger_FirstName'])
-        self.Enter_Value_In_Edit_Field(bookflightpage.getLastname(),BookingTestData['Passenger_LastName'])
-        self.Enter_Value_In_Edit_Field(bookflightpage.getCreditCard(),BookingTestData['CreditCard_No'])
-        self.takeScreenshot()
-        self.Click_Element(bookflightpage.getPurchase())
-        self.explicit_wait("xpath","//font[contains(text(),'booked')]")
+        bookflightpage.enter_firstname(BookingTestData['Passenger_FirstName'])
+        bookflightpage.enter_lastname(BookingTestData['Passenger_LastName'])
+        bookflightpage.enter_creditCard(BookingTestData['CreditCard_No'])
+        bookflightpage.click_purchase()
 
         #Confirmation Page
         confirmationpage=ConfirmationPage(self.driver)
-        msg=confirmationpage.getConfirmation_msg().text
+        msg=self.driver.find_element(*confirmationpage.ConfirmationPageObjects['we_confirmation']).text
+
         assert "Your itinerary has been booked" in msg
-        self.takeScreenshot()
-        self.Click_Element(confirmationpage.getLogOut())
-        self.explicit_wait("name","login")
+        confirmationpage.takeScreenshot()
+
+        confirmationpage.click_logOut()
+        confirmationpage.explicit_wait(confirmationpage.ConfirmationPageObjects['btn_Logout'])
 
         log.info("Booking Test Completed")
 

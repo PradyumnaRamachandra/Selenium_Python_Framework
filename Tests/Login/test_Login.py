@@ -21,13 +21,10 @@ class TestLogin(BaseClass):
 
         #LoginPage
         loginpage=LoginPage(self.driver)
-        self.Enter_Value_In_Edit_Field(loginpage.getusername(),LoginTestData['UserName'])
-        self.Enter_Value_In_Edit_Field(loginpage.getpassword(),LoginTestData['Password'])
-        self.takeScreenshot()
-        self.Click_Element(loginpage.getsignin())
-        # self.explicit_wait("xpath","//input[@value='roundtrip']")
-        self.explicit_wait("xpath","//a[text()='SIGN-OFF']")
-        self.Click_Element(loginpage.getSignOff())
-        self.explicit_wait("name","submit")
+        loginpage.Enter_Username(LoginTestData['UserName'])
+        loginpage.Enter_Password(LoginTestData['Password'])
+        loginpage.takeScreenshot()
+        loginpage.Click_Signin()
+        loginpage.Click_SignOff()
         log.info("Login Test Completed")
 

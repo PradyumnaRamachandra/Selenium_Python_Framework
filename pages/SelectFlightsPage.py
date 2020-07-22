@@ -1,13 +1,12 @@
 
 from TestData.ExcelLib import *
+from Utilities.UtilityFunctions import UtilityFunctions
 
-class SelectFlightsPage():
+
+class SelectFlightsPage(UtilityFunctions):
 
     SelectFlightsPageObjects=read_locators("SelectFlightsPage")
 
-    def __init__(self,driver):
-        self.driver=driver
-
-    def getflights_reservation(self):
+    def click_flights_reservation(self):
         btn_reserveflights=SelectFlightsPage.SelectFlightsPageObjects['btn_reserveflights']
-        return self.driver.find_element(*btn_reserveflights)
+        self.Click_Element(btn_reserveflights)
