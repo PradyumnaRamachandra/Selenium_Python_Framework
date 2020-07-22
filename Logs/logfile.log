@@ -1,3 +1,8 @@
-2020-07-22 11:21:55,433 :INFO :test_LoginTest :Login Test Started
-2020-07-22 11:21:55,778 :INFO :test_LoginTest :
-2020-07-22 11:21:59,073 :INFO :test_LoginTest :Login Test Completed
+2020-07-22 16:04:32,160 :INFO :UtilityFunctions :Entered mercury on userName value
+2020-07-22 16:04:32,308 :INFO :UtilityFunctions :Entered mercury on password value
+2020-07-22 16:04:34,420 :INFO :UtilityFunctions :Clicked on //input[@name='submit'] value
+2020-07-22 16:04:35,712 :INFO :UtilityFunctions :Clicked on //a[text()='SIGN-OFF'] value
+2020-07-22 16:04:48,293 :INFO :UtilityFunctions :Entered mercury on userName value
+2020-07-22 16:04:48,455 :INFO :UtilityFunctions :Entered mercury on password value
+2020-07-22 16:04:50,758 :INFO :UtilityFunctions :Clicked on //input[@name='submit'] value
+2020-07-22 16:04:51,648 :INFO :UtilityFunctions :Clicked on //a[text()='SIGN-OFF'] value

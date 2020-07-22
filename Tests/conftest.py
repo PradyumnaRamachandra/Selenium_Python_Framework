@@ -30,7 +30,7 @@ def browser_setup(request):
         driver = webdriver.Ie(Config['IE_Driver_Path'])
 
     driver.maximize_window()
-    driver.implicitly_wait(Config['Wait_Time'])
+    # driver.implicitly_wait(Config['Wait_Time'])
     driver.get(Config['App_URL'])
 
     request.cls.driver=driver

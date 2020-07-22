@@ -1,6 +1,6 @@
 
 from TestData.ExcelLib import *
-from Utilities.BaseClass import BaseClass
+from Utilities.BaseTest import BaseTest
 
 from pages.BookFlightPage import BookFlightPage
 from pages.ConfirmationPage import ConfirmationPage
@@ -12,16 +12,13 @@ from pages.SelectFlightsPage import SelectFlightsPage
 
 BookingData=getTestData("BookingModule","test_flightbooking")
 
-class TestBooking(BaseClass):
+class TestBooking(BaseTest):
 
     @pytest.fixture(params=BookingData)
     def BookingTestData(self,request):
         return request.param
 
     def test_flightbooking(self,BookingTestData):
-
-        log=self.getlogger()
-        log.info("Booking  Test Started")
 
         # LoginPage
         loginpage = LoginPage(self.driver)
@@ -58,5 +55,5 @@ class TestBooking(BaseClass):
         confirmationpage.click_logOut()
         confirmationpage.explicit_wait(confirmationpage.ConfirmationPageObjects['btn_Logout'])
 
-        log.info("Booking Test Completed")
+
 
